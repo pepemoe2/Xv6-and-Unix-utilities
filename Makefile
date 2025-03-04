@@ -194,8 +194,10 @@ UPROGS=\
 	$U/_grind\
 	$U/_wc\
 	$U/_zombie\
-
-
+	$U/_pingpong\
+	$U/_primes\
+	$U/_find\
+	$U/_xargs\
 
 
 ifeq ($(LAB),syscall)
@@ -223,7 +225,8 @@ endif
 
 ifeq ($(LAB),cow)
 UPROGS += \
-	$U/_cowtest
+	$U/
+_cowtest
 endif
 
 ifeq ($(LAB),thread)
